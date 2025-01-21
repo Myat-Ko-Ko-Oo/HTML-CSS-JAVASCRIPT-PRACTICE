@@ -1,5 +1,6 @@
 <html>
     <head>
+  <meta charset="UTF-8">       <!-- UNICODE FONT -->
         <title>CSS</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,26 +8,40 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="style.css">
+<!-- internal css -->
 <style>
+   /* Internet Font API*/
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap');
-    *{
-        font-family: "Noto Sans Myanmar", serif;
-        font-weight: 100;
-        font-style: normal;
-        color: green;
+    /*Local Font Use*/
+    @font-face {
+        
+        font-family: 'Notos';
+        src: url(MyanmarFonts/NotoSerifMyanmar-Regular.ttf);
     }
 
-    body{
+    *{
+        font-family: 'Notos';
+        font-weight: 100;
+    }
+    p{
+       color: blue;
+       font-size: 30px;
+       text-align: center; /* right left center */
+    }
+   /* Internet Font Use*/
+    /* body{
         font-family: "Noto Sans Myanmar", serif;
         font-weight: 100;
         font-style: normal;
         color: green;
-    }
+    } */
 </style>   
 </head>
     <body>
         <h1>Selector And Declaration(property:value)</h1>
+        <!-- inline css -->
         <p>ယူနီကုဒ်ဖောင့်စနစ်ထည့်သွင်းနည်း.ယူနီကုဒ်စနစ်သို့ ပြောင်းလဲရန်အဆင့်(၃)ဆင့် လုပ်ရပါမယ်: ဖောင့်စနစ်ပြောင်းရပါမယ်; ကီးဘုတ်လက်ကွက် ထည့်သွင်းရပါမယ်; ဖုန်းလိပ်စာ၊ Note စာမှတ်တမ်းများ စာအဟောင်းမှ</p>
+        <p style="color:red;font-size: 50px; text-align: left;">Inline HTML TEST</p>
     </body>
 </html>
