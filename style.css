@@ -3,3 +3,9 @@ p{
     font-size: 30px;
     text-align: center; /* right left center */
  }
+ .typeA{
+    color:green;
+ }
+ #unicode{
+    color: red;
+ }
